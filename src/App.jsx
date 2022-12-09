@@ -4,7 +4,9 @@ import { useEffect,useState } from "react";
 import './App.css'
 import LocationInfo from "./components/LocationInfo";
 import ResidentCard from "./components/ResidentCard";
-import residentCard from './components/styles/residentCard.css'
+import fondo from "./assets/img/nuevo.gif"
+
+
 function App() {
  // https://rickandmortyapi.com/api/location/3
 
@@ -30,7 +32,7 @@ setlocationInput(e.target.inputSearch.value)
  }
 return (
     <div className="App">
-     <img className="gif" src="nuevo.gif" alt="" />
+     <img className="gif" src={fondo} alt="" />
      <h1>Rick and Marty</h1>
     <form onSubmit={handleSubmit}>
      <input id="inputSearch" type="text"/>
